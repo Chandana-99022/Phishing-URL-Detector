@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Phishing URL Detector</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🔐 Phishing URL Detector</h1>
+
+        <p class="subtitle">
+            Check whether a URL is legitimate or potentially phishing.
+        </p>
+
+        <div class="detector-box">
+
+            <label for="urlInput">Enter a URL</label>
+
+            <input
+                type="text"
+                id="urlInput"
+                placeholder="https://example.com"
+            >
+
+            <button id="checkButton">
+                Check URL
+            </button>
+
+            <div id="loading" class="loading">
+                Checking URL...
+            </div>
+
+            <div id="result" class="result"></div>
+
+        </div>
+
+        <div class="info">
+            <div class="history-box">
+
+    <h2>🕘 Prediction History</h2>
+
+    <div id="historyList">
+        <p>No predictions yet.</p>
+    </div>
+
+    <button id="clearHistory" class="clear-button">
+        Clear History
+    </button>
+
+</div>
+            <h2>How it works</h2>
+
+            <p>
+                Our machine learning model analyzes features of the
+                URL and predicts whether it is legitimate or phishing.
+            </p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
